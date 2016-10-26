@@ -39,7 +39,9 @@ html {
 }
 
 @media screen and (max-width: 896px) {
-    body {
-        margin: 64px;
+    html {
+        body {
+            margin: 64px;
+        }
     }
 }
