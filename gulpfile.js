@@ -36,11 +36,19 @@ function transpile (entry, out) {
         .pipe(gulp.dest(out));
 }
 
-gulp.task('watch-js', function() {
+gulp.task('watch-js', function () {
     var entries = getDirs(path.join("./", "pages"));
     var watcher = gulp.watch(entries);
 
-    watcher.on('change', function(event) {
+    watcher.on('change', function (event) {
         transpile(event.path, event.path.replace("main.js", ""));
+    });
+});
+
+gulp.task("xpile-js", function () {
+    var entries = getDirs(path.join("./", "pages"));
+
+    return entries.forEach(function (entry) {
+        transpile(entry, entry.replace("main.js", ""));
     });
 });

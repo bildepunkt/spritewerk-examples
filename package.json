@@ -5,7 +5,9 @@
   "main": "index.html",
   "scripts": {
     "watch-js": "./node_modules/.bin/gulp watch-js",
-    "watch-sass": "./node_modules/.bin/node-sass styles/scss/main.scss styles/main/.css",
+    "xpile-js": "./node_modules/.bin/gulp xpile-js",
+    "watch-sass": "./node_modules/.bin/node-sass -w styles/scss/main.scss styles/main.css",
+    "xpile-sass": "./node_modules/.bin/node-sass styles/scss/main.scss styles/main.css",
     "serve": "python -m SimpleHttpServer 2048"
   },
   "repository": {

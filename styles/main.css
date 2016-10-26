@@ -1,0 +1,28 @@
+html {
+  font-family: sans-serif; }
+  html body {
+    margin: 64px auto;
+    max-width: 768px; }
+  html pre {
+    font-size: 86%; }
+    html pre.code-block {
+      max-height: 512px;
+      overflow-y: scroll; }
+  html a, html a:visited {
+    text-decoration: none;
+    color: cornflowerblue; }
+  html a:active, html a:hover {
+    text-decoration: underline; }
+  html .subtitle {
+    color: #aaa;
+    text-transform: uppercase;
+    padding: 12px 0;
+    border-bottom: 1px dotted #aaa; }
+  html #spritewerk {
+    position: relative;
+    width: 512px;
+    height: 512px; }
+
+@media screen and (max-width: 896px) {
+  body {
+    margin: 64px; } }
