@@ -25,10 +25,14 @@ function transpile (entry, out) {
                     {
                         test: /.js?$/,
                         loader: "babel-loader",
-                        exclude: /node_modules/,
+                        exclude: /node_modules\/(?!(spritewerk)\/).*/,
                         query: {
                             presets: ["es2015"]
                         }
+                    },
+                    {
+                        test: /\.json$/,
+                        loader: "json"
                     }
                 ]
             }
